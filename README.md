@@ -1,6 +1,10 @@
 # Gambler's Luck
 
-A text-based RPG dungeon crawler written in Java. Fight through 7 floors of a deadly casino, collect coins, and survive two boss encounters — all built around OOP principles.
+A text-based RPG dungeon crawler written in Java. Fight through 7 floors of a deadly casino, collect coins, and survive two boss encounters — built around OOP principles.
+
+[![GitHub](https://img.shields.io/badge/GitHub-NinoMarinkovic%2FGamblersLuck-181717?logo=github)](https://github.com/NinoMarinkovic/GamblersLuck)
+[![Language](https://img.shields.io/badge/language-Java-orange)](https://github.com/NinoMarinkovic/GamblersLuck)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 ---
 
@@ -70,4 +74,8 @@ damage = baseAttack
 
 Coins aren't just currency — they directly scale your damage output. Spending them on Heavy attacks trades resources for burst damage.
 
+---
 
+## License
+
+MIT — see [LICENSE](LICENSE)
