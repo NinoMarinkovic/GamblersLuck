@@ -70,8 +70,4 @@ damage = baseAttack
 
 Coins aren't just currency — they directly scale your damage output. Spending them on Heavy attacks trades resources for burst damage.
 
----
 
-## License
-
-MIT
