@@ -1,5 +1,0 @@
-.env
-ca.pem
-__pycache__/
-.git
-.pytest_cache/
