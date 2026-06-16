@@ -1,44 +1,77 @@
-# 🎰 Gambler's Luck
-A text-based RPG dungeon crawler built in Java using OOP principles.
-Fight your way through a deadly casino, collect coins and survive!
+# Gambler's Luck
 
-## Features
-* 🎲 4 enemy types — Dice, Bodyguard, Blackjack Cards, Slot Machine
-* 👑 2 Boss fights — the Dealer and the Kingpin
-* ⚔️ Turn-based combat — Normal and Heavy attacks
-* 💰 Coin-based damage system — more coins = more damage
-* 🛒 NPCs — Merchant, Bartender, Croupier and Janitor
-* 🏢 7 floors — each harder than the last
-* 💀 Game Over screen — ASCII art on death
+A text-based RPG dungeon crawler written in Java. Fight through 7 floors of a deadly casino, collect coins, and survive two boss encounters — all built around OOP principles.
+
+---
 
 ## Tech Stack
-Language  | Java
-Paradigm  | Object-Oriented Programming (OOP)
-IDE       | Eclipse
+
+**Language:** Java  
+**Paradigm:** Object-Oriented Programming (OOP)  
+**IDE:** Eclipse  
+
+---
+
+## Features
+
+- **4 enemy types** — Dice, Bodyguard, Blackjack Cards, Slot Machine
+- **2 boss fights** — the Dealer and the Kingpin
+- **Turn-based combat** — Normal and Heavy attacks
+- **Coin-based damage system** — the more coins you carry, the harder you hit
+- **4 NPCs** — Merchant, Bartender, Croupier, Janitor
+- **7 floors** — each harder than the last
+- **ASCII Game Over screen** on death
+
+---
 
 ## Project Structure
+
+```
 gamblers-luck/
-├── Enemy.java   # Enemy types and AI
-├── Game.java    # Game loop, rooms, NPCs and loot
-└── Player.java  # Player stats, attacks and coin management
+├── Enemy.java    # Enemy types and combat AI
+├── Game.java     # Game loop, rooms, NPCs and loot
+└── Player.java   # Player stats, attacks and coin management
+```
+
+---
 
 ## Getting Started
-Java installed. No dependencies required.
 
-### Installation
-1. Clone the repository
+**Prerequisites:** Java installed. No external dependencies.
+
+```bash
 git clone https://github.com/NinoMarinkovic/GamblersLuck.git
-2. Open in Eclipse and run `Game.java`
+```
+
+Open the project in Eclipse and run `Game.java`.
+
+---
 
 ## How to Play
-| Action | Description |
-|--------|-------------|
-| Type `ja` | Start the game |
-| Press `1` | Normal attack |
-| Press `2` | Heavy attack (costs 3 coins) |
 
-## How the Combat Works
-damagePlayer = attackPlayer
-+ (HeavyActive × HeavyAttack × HeavyAttackMultiplier)
-+ (coinDamageMultiplier × coins)
-+ (CraneActive × (attackPlayer × PaperCutMultiplier))
+| Input | Action |
+|-------|--------|
+| `ja` | Start the game |
+| `1` | Normal attack |
+| `2` | Heavy attack (costs 3 coins) |
+
+---
+
+## Combat System
+
+Damage is calculated as:
+
+```
+damage = baseAttack
+       + (heavyActive × heavyAttack × heavyAttackMultiplier)
+       + (coinDamageMultiplier × coins)
+       + (craneActive × (baseAttack × paperCutMultiplier))
+```
+
+Coins aren't just currency — they directly scale your damage output. Spending them on Heavy attacks trades resources for burst damage.
+
+---
+
+## License
+
+MIT
